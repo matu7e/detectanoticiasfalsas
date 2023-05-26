@@ -1,0 +1,357 @@
+html {
+  padding-top: 40px;
+  margin: 0px;
+  
+}
+body {
+  padding: 0px;
+  padding-top: 40px;
+  margin: 0px;
+  font-size: 12px;
+  background-size: cover;
+  margin-bottom: 0;
+  font-family: 'Kanit', sans-serif;
+  background-image: url("img/fondo.jpg");
+  position: relative;
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: -9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Color blanco con baja opacidad */
+  pointer-events: none; /* Evita que el pseudo-elemento interfiera con los eventos de clic */
+}
+
+
+
+
+
+
+/*---------------------------- nav ----------------------------*/
+nav {
+    
+    border-bottom: 2px solid white;
+    display: flex;
+    padding: 30px 0 ;
+    align-items: center;
+    justify-content: center;
+    margin: -80px 0 0 0;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    
+}
+h1{
+    display: none;
+    margin: 0;
+    
+}
+.ul_pestanias {
+    display: flex;
+    margin: 0 0 0 60px;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+
+nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 120px 0 120px;
+}
+
+
+
+
+.checkbtn{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    padding: 25px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+.checkbtn i {
+    margin-right: 5px;
+}
+#check{
+    display: none;
+}
+/*----------------------- fin del nav ----------------------------*/
+
+/*----------------------- main ----------------------------*/
+
+main {
+    background-color: #183A37;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border-radius: 15px;
+  }
+  
+  .conteiner_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  #urlForm {
+    margin-bottom: 40px;
+  }
+  
+  input[type="text"] {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 250px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ffffff42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+/*------------------------- Footer -------------------------------*/
+
+
+footer {
+    background: rgba(255, 255, 255, 0.616);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+ 
+  
+  
+  
+  .center{
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+  }
+  
+
+  .contacto {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 60px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+
+
+
+/*------------------------- fin del footer ----------------------------*/
+
+
+
+@media (max-width: 850px){
+    /*------------------------- nav ---------------------------------------*/
+    nav{
+        justify-content: center;
+        
+    }
+    h1{
+        display: block;
+        color: rgb(0, 0, 0);
+    }
+
+
+    .ul_pestanias{
+        position: fixed;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: inline-block;
+        margin: 0;
+        margin-top: 5px;
+        backdrop-filter: blur(5px);
+          
+    }
+    .ul_pestanias li{
+        
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    .ul_pestanias{
+        top:  85px;
+        
+    }
+   
+    .ul_pestanias li a{
+        font-size: 20px;
+    }
+    
+
+    .checkbtn{
+        display: block;
+    }
+
+    
+   
+
+    #check:checked ~ .ul_pestanias{
+        left: 0;
+        
+    }
+    /*------------------------- fin del nav ----------------------------*/
+    /*------------------------- Footer ---------------------------------*/
+    .footer-container {
+        flex-direction: column;
+      }
+      
+      .footer-left,
+      .footer-right {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      .footer-right img {
+        margin-top: 10px;
+      }
+    /*------------------------- fin del footer ----------------------------*/
+}
+
+@media (max-width: 450px){
+     /*------------------------- nav --------------------------------------*/
+    h1{
+        font-size: 15px;
+        
+    }
+    .ul_pestanias{
+        top: 79px;
+        
+    }
+    .ul_pestanias li a {
+        font-size: 15px;
+    }
+     /*------------------------- fin del nav ----------------------------*/
+     main{
+        width: 150px;
+        height: 100px;
+     }
+      #urlForm {
+        margin-bottom: 20px;
+      }
+      
+      input[type="text"] {
+        margin-top: 15px;
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 8px;
+        width: 125px;
+      }
+      
+      button[type="submit"] {
+        padding: 5px 10px;
+        font-size: 8px;
+        border-radius: 2px;
+      }
+    
+}
+
+@media (max-width: 350px){
+     /*-------------------------  nav ----------------------------------*/
+    h1{
+        font-size: 10px;
+        
+    }
+    .ul_pestanias{
+        top: 85px;
+       
+    }
+    .ul_pestanias li a {
+        font-size: 12px;
+    }
+     /*------------------------- fin del nav ----------------------------*/
+}
+
+@media (max-width: 400px){
+    footer{
+        display: block;
+    }
+    .center{
+        
+        margin-left: 0;
+    }
+    .contacto{
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 280px){
+     /*------------------------- nav ------------------------------------*/
+    h1{
+        display: none;
+        
+    }
+    .ul_pestanias{
+        top: 60px;
+       
+    }
+     /*------------------------- fin del nav ----------------------------*/
+    
+}
+

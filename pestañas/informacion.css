@@ -1,0 +1,425 @@
+
+
+
+
+  
+html,body {
+    padding: 0px;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-size: 12px;
+    background-size: cover;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    background-color: #DEE7E7;
+    
+    
+    
+    
+}
+
+/*---------------------------- nav ----------------------------*/
+nav {
+    
+    
+    display: flex;
+    padding: 30px 0 ;
+    align-items: center;
+    justify-content: center;
+    margin: -80px 0 0 0;
+    position: fixed;
+    background: rgba(255, 255, 255);
+    width: 100%;
+    z-index: 9999;
+    
+}
+h1{
+    display: none;
+    margin: 0;
+    
+}
+.ul_pestanias {
+    display: flex;
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+
+nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 120px 0 120px;
+}
+
+
+
+
+.checkbtn{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    padding: 25px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+.checkbtn i {
+    margin-right: 5px;
+}
+#check{
+    display: none;
+}
+/*----------------------- fin del nav ----------------------------*/
+
+/*----------------------- main ----------------------------*/
+
+.Conteiner-main{
+    background-color: #0A163E;
+    width: 70%;
+    margin: auto;
+    z-index: -2;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fakenew{
+    margin-left: 0;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.article_1 {
+    margin: auto;
+    align-items: center;
+   
+}
+
+.article_1 p {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.article_1 p span {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.article_1 img {
+    margin-left: 120px;
+}
+
+.title {
+    padding: 50px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.conteiner_objetivo {
+    margin: 30px auto;
+
+    align-items: center;
+}
+
+.objetivo {
+    padding: 10px 0 0 0;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.span2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.conteiner_datos{
+    margin: auto;
+    padding: 0 0 20px 0;
+    align-items: center;
+
+}
+.datos {
+    padding: 0 0 0 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.conteiner_datos ul li{
+    margin: 20px;
+}
+.conteiner_datos ul {
+    margin: 10px;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+  }
+footer {
+    margin-top: 100px;
+  }
+
+
+@media (max-width: 550px) {
+
+
+
+    .article_1 p {
+        font-size: 12px;
+    }
+
+    .article_1 p span {
+        font-size: 15px;
+        
+    }
+
+   
+
+    .title {
+        padding: 50px;
+        margin: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .conteiner_objetivo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .objetivo {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------- Footer -------------------------------*/
+
+
+footer {
+    background: rgba(255, 255, 255, 0.616);
+    bottom: 0;
+    text-align: center;
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+ 
+  
+  
+  
+  .center{
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+  }
+  
+
+  .contacto {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 60px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+
+
+
+/*------------------------- fin del footer ----------------------------*/
+
+@media (max-width: 768px) {
+    .conteiner_datos {
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .datos {
+      padding: 30px 0 0 0;
+      font-size: 14px;
+    }
+    
+    
+  }
+
+@media (max-width: 850px){
+    /*------------------------- nav ---------------------------------------*/
+    nav{
+        justify-content: center;
+        
+    }
+    h1{
+        display: block;
+        color: rgb(0, 0, 0);
+    }
+
+
+    .ul_pestanias{
+        position: fixed;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.616);
+        backdrop-filter: blur(5px);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: inline-block;
+        margin: 0;
+        margin-top: 5px;
+        
+          
+    }
+    .ul_pestanias li{
+        
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    .ul_pestanias{
+        top:  80px;
+        
+    }
+   
+    .ul_pestanias li a{
+        font-size: 20px;
+    }
+    
+
+    .checkbtn{
+        display: block;
+    }
+
+    
+   
+
+    #check:checked ~ .ul_pestanias{
+        left: 0;
+        
+    }
+    /*------------------------- fin del nav ----------------------------*/
+    /*------------------------- Footer ---------------------------------*/
+    .footer-container {
+        flex-direction: column;
+      }
+      
+      .footer-left,
+      .footer-right {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      .footer-right img {
+        margin-top: 10px;
+      }
+    /*------------------------- fin del footer ----------------------------*/
+}
+
+
+
+@media (max-width: 450px){
+     /*------------------------- nav --------------------------------------*/
+    h1{
+        font-size: 15px;
+        
+    }
+    .ul_pestanias{
+        top: 70px;
+        
+    }
+    .ul_pestanias li a {
+        font-size: 15px;
+    }
+     /*------------------------- fin del nav ----------------------------*/
+   
+}
+
+@media (max-width: 350px){
+     /*-------------------------  nav ----------------------------------*/
+    h1{
+        font-size: 10px;
+        
+    }
+    .ul_pestanias{
+        top: 85px;
+       
+    }
+    .ul_pestanias li a {
+        font-size: 12px;
+    }
+     /*------------------------- fin del nav ----------------------------*/
+}
+
+@media (max-width: 400px){
+    footer{
+        display: block;
+    }
+    .center{
+        
+        margin-left: 0;
+    }
+    .contacto{
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 280px){
+     /*------------------------- nav ------------------------------------*/
+    h1{
+        display: none;
+        
+    }
+    .ul_pestanias{
+        top: 60px;
+       
+    }
+     /*------------------------- fin del nav ----------------------------*/
+    
+}
